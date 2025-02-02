@@ -1,0 +1,332 @@
+/* Support Hero Section */
+.support-hero {
+    background: linear-gradient(135deg, #f6f9fc 0%, #e9f2ff 100%);
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.support-hero h1 {
+    font-size: 2.5rem;
+    color: var(--text-dark);
+    margin-bottom: 2rem;
+}
+
+.search-box {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    position: relative;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 1rem 1rem 1rem 3rem;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-size: 1.1rem;
+    transition: border-color 0.3s ease;
+}
+
+.search-box i {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-light);
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.quick-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.quick-links a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-dark);
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.quick-links a:hover {
+    background: rgba(33, 150, 243, 0.1);
+    color: var(--primary-color);
+}
+
+/* Support Categories */
+.support-categories {
+    padding: 4rem 0;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.category-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-card .icon {
+    width: 60px;
+    height: 60px;
+    background: var(--gradient);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.category-card .icon i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.category-card h3 {
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.category-card p {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+}
+
+.category-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.category-card li {
+    margin-bottom: 0.8rem;
+}
+
+.category-card a {
+    color: var(--primary-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.category-card a:hover {
+    text-decoration: underline;
+}
+
+/* Ticket System */
+.ticket-system {
+    padding: 4rem 0;
+    background: var(--background-light);
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.new-ticket-btn {
+    padding: 0.8rem 1.5rem;
+    background: var(--gradient);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.new-ticket-btn:hover {
+    transform: translateY(-2px);
+}
+
+.ticket-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.ticket-status {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.ticket-status.open {
+    background: #4CAF50;
+}
+
+.ticket-content {
+    flex: 1;
+}
+
+.ticket-content h3 {
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.ticket-content p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.status-badge {
+    background: rgba(76, 175, 80, 0.1);
+    color: #4CAF50;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+}
+
+.view-ticket-btn {
+    padding: 0.5rem 1rem;
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.view-ticket-btn:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 4rem 0;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.faq-category h3 {
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+}
+
+.faq-item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.faq-question {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-question h4 {
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.faq-answer {
+    padding: 0 0 1rem;
+    color: var(--text-light);
+    display: none;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 4rem 0;
+    background: var(--background-light);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.contact-methods {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.contact-method {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: var(--card-shadow);
+}
+
+.contact-method i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.contact-method h3 {
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.contact-method p {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+.contact-method a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .quick-links {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .contact-methods {
+        grid-template-columns: 1fr;
+    }
+
+    .support-hero h1 {
+        font-size: 2rem;
+    }
+} 

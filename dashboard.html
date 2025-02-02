@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - Nova X</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Nova X</a>
+            </div>
+            <div class="nav-links">
+                <a href="dashboard.html" class="active">Dashboard</a>
+                <a href="my-courses.html">My Courses</a>
+                <a href="certificates.html">Certificates</a>
+                <a href="support.html">Support</a>
+            </div>
+            <div class="user-menu">
+                <div class="notifications">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-badge">3</span>
+                </div>
+                <div class="profile-dropdown">
+                    <img src="profile-pic.jpg" alt="Profile" class="profile-pic">
+                    <span class="username">John Doe</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="dashboard-sidebar">
+            <div class="user-info">
+                <img src="profile-pic.jpg" alt="Profile" class="profile-pic-large">
+                <h3>John Doe</h3>
+                <p>Student ID: NX2024001</p>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="active"><i class="fas fa-home"></i> Overview</a>
+                <a href="#"><i class="fas fa-book"></i> My Courses</a>
+                <a href="#"><i class="fas fa-tasks"></i> Assignments</a>
+                <a href="#"><i class="fas fa-certificate"></i> Certificates</a>
+                <a href="#"><i class="fas fa-chart-line"></i> Progress</a>
+                <a href="#"><i class="fas fa-cog"></i> Settings</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dashboard-main">
+            <!-- Welcome Section -->
+            <section class="welcome-section">
+                <div class="welcome-header">
+                    <div>
+                        <h1>Welcome back, John!</h1>
+                        <p>Track your progress and continue learning</p>
+                    </div>
+                    <div class="date-time">
+                        <span class="current-date">Monday, March 11, 2024</span>
+                        <span class="current-time">2:30 PM</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stats Cards -->
+            <section class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Courses Enrolled</h3>
+                        <p class="stat-number">3</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Learning Hours</h3>
+                        <p class="stat-number">45</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Assignments</h3>
+                        <p class="stat-number">12/15</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Certificates</h3>
+                        <p class="stat-number">2</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Course Progress -->
+            <section class="courses-progress">
+                <h2>Course Progress</h2>
+                <div class="progress-cards">
+                    <div class="progress-card">
+                        <div class="course-info">
+                            <h3>Amazon FBA Mastery</h3>
+                            <p>12 weeks course</p>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%"></div>
+                        </div>
+                        <div class="progress-stats">
+                            <span>75% Complete</span>
+                            <span>9/12 Weeks</span>
+                        </div>
+                        <a href="#" class="continue-btn">Continue Learning</a>
+                    </div>
+                    <!-- More progress cards... -->
+                </div>
+            </section>
+
+            <!-- Upcoming Tasks -->
+            <section class="upcoming-tasks">
+                <h2>Upcoming Tasks</h2>
+                <div class="task-list">
+                    <div class="task-card">
+                        <div class="task-status pending"></div>
+                        <div class="task-content">
+                            <h3>Product Research Assignment</h3>
+                            <p>Amazon FBA Mastery - Week 9</p>
+                            <div class="task-meta">
+                                <span><i class="fas fa-calendar"></i> Due: March 15, 2024</span>
+                                <span><i class="fas fa-clock"></i> 3 days left</span>
+                            </div>
+                        </div>
+                        <button class="start-task-btn">Start Now</button>
+                    </div>
+                    <!-- More task cards... -->
+                </div>
+            </section>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="dashboard-right-sidebar">
+            <!-- Announcements -->
+            <section class="announcements">
+                <h2>Announcements</h2>
+                <div class="announcement-list">
+                    <div class="announcement-card">
+                        <span class="announcement-date">Mar 10</span>
+                        <h3>New Course Update</h3>
+                        <p>Week 10 content is now available for Amazon FBA Mastery</p>
+                    </div>
+                    <!-- More announcements... -->
+                </div>
+            </section>
+
+            <!-- Schedule -->
+            <section class="schedule">
+                <h2>Upcoming Sessions</h2>
+                <div class="schedule-list">
+                    <div class="schedule-card">
+                        <div class="schedule-time">
+                            <span class="date">Mar 12</span>
+                            <span class="time">3:00 PM</span>
+                        </div>
+                        <div class="schedule-info">
+                            <h3>Live Q&A Session</h3>
+                            <p>Amazon FBA Mastery</p>
+                            <button class="join-btn">Join Session</button>
+                        </div>
+                    </div>
+                    <!-- More schedule cards... -->
+                </div>
+            </section>
+        </aside>
+    </div>
+
+    <script src="dashboard.js" defer></script>
+</body>
+</html> 

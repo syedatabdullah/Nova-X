@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs & Internships - Nova X</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="jobs.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Nova X</a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses & Training</a>
+                <a href="jobs.html" class="active">Jobs & Internships</a>
+                <a href="about.html">About Us</a>
+            </div>
+            <div class="auth-buttons">
+                <a href="login.html" class="login-btn">Login</a>
+                <a href="signup.html" class="signup-btn">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="jobs-hero">
+        <div class="container">
+            <h1>Launch Your Career</h1>
+            <p>Find exciting opportunities in e-commerce and digital marketing</p>
+            <div class="search-box">
+                <div class="search-input">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search jobs...">
+                </div>
+                <button class="search-btn">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="jobs-filter">
+        <div class="container">
+            <div class="filter-options">
+                <select name="type">
+                    <option value="">Job Type</option>
+                    <option value="full-time">Full Time</option>
+                    <option value="part-time">Part Time</option>
+                    <option value="internship">Internship</option>
+                </select>
+                <select name="location">
+                    <option value="">Location</option>
+                    <option value="lahore">Lahore</option>
+                    <option value="karachi">Karachi</option>
+                    <option value="islamabad">Islamabad</option>
+                    <option value="remote">Remote</option>
+                </select>
+                <select name="experience">
+                    <option value="">Experience Level</option>
+                    <option value="entry">Entry Level</option>
+                    <option value="mid">Mid Level</option>
+                    <option value="senior">Senior Level</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <section class="jobs-listing">
+        <div class="container">
+            <div class="jobs-grid">
+                <!-- Job Cards will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Nova X Team. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="jobs.js" defer></script>
+</body>
+</html> 

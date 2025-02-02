@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - Nova X</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="404.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        .error-container {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .error-code {
+            font-size: 8rem;
+            font-weight: 700;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        .error-message {
+            font-size: 1.5rem;
+            color: var(--text-dark);
+            margin-bottom: 2rem;
+        }
+
+        .back-home {
+            padding: 1rem 2rem;
+            background: var(--gradient);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .back-home:hover {
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Nova X</a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses & Training</a>
+                <a href="jobs.html">Jobs & Internships</a>
+                <a href="about.html">About Us</a>
+            </div>
+            <div class="auth-buttons">
+                <a href="login.html" class="login-btn">Login</a>
+                <a href="signup.html" class="signup-btn">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="error-container">
+        <div class="error-code">404</div>
+        <h1 class="error-message">Page Not Found</h1>
+        <p>The page you're looking for doesn't exist or has been moved.</p>
+        <a href="index.html" class="back-home">Back to Home</a>
+    </div>
+
+    <footer class="main-footer">
+        <!-- ... same footer content as other pages ... -->
+    </footer>
+</body>
+</html> 

@@ -1,0 +1,341 @@
+/* General Styles */
+.course-hero {
+    background: linear-gradient(135deg, #f6f9fc 0%, #e9f2ff 100%);
+    padding: 8rem 0 4rem;
+    text-align: center;
+    position: relative;
+}
+
+.course-hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+}
+
+.course-hero p {
+    font-size: 1.25rem;
+    color: var(--text-light);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.courses-grid {
+    padding: 5rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Course Card Styles */
+.course-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    transition: all 0.3s ease;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--hover-shadow);
+}
+
+.course-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.course-card:hover img {
+    transform: scale(1.05);
+}
+
+.course-content {
+    padding: 2rem;
+}
+
+.course-content h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.course-content p {
+    color: var(--text-light);
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.course-content ul {
+    margin: 1.5rem 0;
+}
+
+.course-content ul li {
+    color: var(--text-light);
+    margin-bottom: 0.75rem;
+    padding-left: 1.75rem;
+    position: relative;
+}
+
+.course-content ul li:before {
+    content: "→";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+}
+
+/* Button Styles */
+.enroll-btn {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    background: var(--gradient);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(33, 150, 243, 0.3);
+}
+
+.enroll-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(33, 150, 243, 0.4);
+}
+
+.enroll-btn:focus {
+    outline: 2px solid #21CBF3;
+    outline-offset: 3px;
+}
+
+/* Course Stats */
+.course-stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: var(--card-shadow);
+}
+
+.stat i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.stat .number {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.stat .label {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+/* Category Tabs */
+.course-categories {
+    background: white;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.category-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.tab {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    background: none;
+    color: var(--text-light);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.tab.active {
+    color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
+}
+
+/* Enhanced Course Cards */
+.course-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--gradient);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.course-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.course-highlights span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.course-price {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: var(--background-light);
+    border-radius: 10px;
+}
+
+.price-tag {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.original {
+    color: var(--text-light);
+    text-decoration: line-through;
+    font-size: 0.9rem;
+}
+
+.discounted {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.installment {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.seats-left {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background: #fff3cd;
+    color: #856404;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* Course Benefits Section */
+.course-benefits {
+    padding: 6rem 0;
+    background: white;
+}
+
+.course-benefits h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.benefit-card {
+    text-align: center;
+    padding: 2rem;
+    background: var(--background-light);
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-card i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.benefit-card h3 {
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.benefit-card p {
+    color: var(--text-light);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .course-stats {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .category-tabs {
+        overflow-x: auto;
+        padding-bottom: 1rem;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Add these to courses.css */
+
+.support-link-small {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.support-link-small:hover {
+    color: var(--primary-color);
+}
+
+.course-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
